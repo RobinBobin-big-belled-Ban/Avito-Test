@@ -1,0 +1,39 @@
+.card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 1rem;
+    padding: 0 1rem;
+
+    @media (max-width: 700px) {
+        grid-template-columns: auto; 
+        grid-gap: .75rem;
+    }
+}
+
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    border: 2px solid lightblue;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 3px lightgray;
+    padding: 1.5rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color:beige ;
+    }
+}
+
+.title {
+    color: tomato;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: tomato;
+        cursor: pointer;
+        opacity: .5;
+    }
+}

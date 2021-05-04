@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.button {
+    width: 120 / 16 * 1rem;
+    height: 1.5rem;
+    border: 1px solid limegreen;
+    border-radius: 4px;
+    background: inherit;
+    display: flex;
+    align-items: center;
+    color: limegreen;
+     &:hover,
+     &:active,
+     &:focus {
+         opacity: .5;
+         cursor: pointer;
+     }
+}
+
+.card {
+    border: 2px solid lightgray;
+}
